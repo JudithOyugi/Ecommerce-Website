@@ -1,0 +1,656 @@
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  /* Your laptop-specific styles here */
+  
+}
+
+/*----------media query for max-width devices--------*/
+@media only screen and (max-width: 840px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-p1 {
+    margin: 10px;
+  }
+
+  #header.logo {
+    width: 40%;
+    height: 40%;
+    font-weight: bold;
+    font-size: 26px;
+    /* margin-left: 10px; */
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 300px;
+    background-color: lightgray;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    color: black;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: blue;
+    font-size: 24px;
+  }
+  #lg-bag {
+    display: none;
+  }
+
+  .col-2 {
+    flex-basis: 40%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 23px 0;
+    color: blue;
+  }
+  .col-2 h2 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: blue;
+  }
+
+  .btn {
+    display: inline-block;
+    background: brown;
+    color: black;
+    padding: 8px 20px;
+    margin: 10px 0;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.5s;
+    width: 80%;
+    height: 5vh;
+    line-height: 24px;
+    align-items: center;
+  }
+
+  /*---------features-----------*/
+  .feature {
+    margin: 30px 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Change flex-wrap to wrap */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+  }
+
+  .col-3 {
+    flex-basis: calc(
+      50% - 20px
+    ); /* Each column takes up half the width with some spacing */
+    max-width: calc(50% - 20px); /* Set max-width to half the container width */
+    padding: 10px 5px;
+    border: 1px solid violet;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    margin: 5px;
+    margin-bottom: 30px;
+    background: lightgrey;
+    text-align: center;
+    justify-content: space-between;
+    transform: 5s ease;
+  }
+
+  /*--------------brands-------------*/
+  .brands {
+    margin: 100px auto;
+    text-align: center; /* Center align the brands */
+  }
+
+  .col-5 {
+    width: calc(
+      20% - 20px
+    ); /* Set width to 20% of the container width with some spacing */
+    max-width: 200px; /* Set max-width to 100px */
+    display: inline-block; /* Display columns inline */
+    margin: 0 10px; /* Add spacing between columns */
+    vertical-align: top; /* Align columns to the top */
+  }
+
+  .col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+  }
+
+  /*---------newsletter--------------------*/
+  .newsletter {
+    position: relative; /* Set position relative */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+    height: 28vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("banners/nw\ banner.jpg");
+    background-repeat: no-repeat;
+    padding: 40px 80px;
+    margin-top: 50px;
+  }
+
+  /* Styles for the form container */
+  .newsletter .form {
+    position: absolute; /* Set position absolute */
+    bottom: 0; /* Align form to the bottom of the newsletter */
+    left: 50%; /* Center the form horizontally */
+    transform: translateX(-50%); /* Adjust horizontally to center */
+    width: 80%; /* Adjust width as needed */
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /* Add background color with transparency */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 10px; /* Add border radius for rounded corners */
+  }
+
+  /* Styles for form elements */
+  .newsletter .form input {
+    width: calc(100% - 10px); /* Adjust width to accommodate padding */
+    margin-bottom: 2px; /* Add margin for spacing between elements */
+  }
+
+  .newsletter .form button {
+    width: calc(100% - 10px); /* Adjust width to accommodate padding */
+  }
+
+  /* Styles for h4 element */
+  .newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 2px; /* Adjust padding top to move the h4 element upwards */
+    padding-bottom: 2px;
+    color: white;
+    margin-top: 0; /* Remove margin-top */
+    margin-bottom: 5px; /* Add margin-bottom for spacing */
+  }
+
+  /* Styles for p element */
+  .newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 40px; /* Adjust padding bottom */
+    color: burlywood;
+    min-width: 120px;
+    margin-top: 0; /* Remove margin-top */
+    position: relative; /* Add position relative to p */
+    z-index: 2; /* Ensure p appears above form */
+  }
+
+  .newsletter p span {
+    color: brown;
+  }
+
+  .page-header {
+    position: relative; /* Set position relative to use absolute positioning */
+    background-image: url(banners/pg-banner.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center align content vertically */
+    text-align: center;
+  }
+
+  .page-header h2,
+  .page-header p {
+    color: rgb(200, 66, 182);
+    position: absolute; /* Set position absolute */
+    width: 80%; /* Limit width to 80% of the container */
+    left: 50%; /* Position in the center horizontally */
+    transform: translateX(-50%); /* Adjust horizontally to center */
+  }
+
+  .page-header h2 {
+    top: 10%; /* Position at 30% from the top */
+    margin-bottom: 70px;
+    font-size: 40px;
+  }
+
+  .page-header p {
+    top: 50%; /* Position at 50% from the top */
+    margin-top: 100px;
+  }
+
+  /* Blog Page */
+
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #blog .blog-img {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  #blog .blog-details {
+    width: 100%;
+  }
+
+  #about-head {
+    display: flex;
+    align-items: center;
+  }
+
+  #about-head img {
+    width: 40%;
+    height: 40vh;
+    margin-top: 60px;
+    border-radius: 10px 50px;
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+
+  #about-head div {
+    padding-top: 50px; /* Adjust as needed to move the div downwards */
+  }
+
+  #cart {
+    overflow-x: auto;
+  }
+
+  #cart table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  #cart table img {
+    width: 70px;
+  }
+
+  #cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px;
+  }
+
+  #cart table .table-head {
+    border: 1px solid lightgrey;
+    border-left: none;
+    border-right: none;
+  }
+
+  #cart table .table-head td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px 5px;
+  }
+
+  #cart table tbody td {
+    padding: 5px;
+    vertical-align: middle;
+    font-size: 14px; /* Adjust font size if necessary */
+  }
+}
+
+/*----------media query for min-width devices--------*/
+@media only screen and (min-width: 560px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-p1 {
+    margin: 10px;
+  }
+
+  #header.logo {
+    width: 40%;
+    height: 40%;
+    font-weight: bold;
+    font-size: 26px;
+    /* margin-left: 10px; */
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 300px;
+    background-color: lightgray;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    color: black;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: blue;
+    font-size: 24px;
+  }
+  #lg-bag {
+    display: none;
+  }
+
+  .col-2 {
+    flex-basis: 40%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 23px 0;
+    color: blue;
+  }
+  .col-2 h2 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: blue;
+  }
+
+  .btn {
+    display: inline-block;
+    background: brown;
+    color: black;
+    padding: 8px 20px;
+    margin: 10px 0;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.5s;
+    width: 80%;
+    height: 5vh;
+    line-height: 24px;
+    align-items: center;
+  }
+
+  /*---------features-----------*/
+  .feature {
+    margin: 30px 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Change flex-wrap to wrap */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+  }
+
+  .col-3 {
+    flex-basis: calc(
+      50% - 20px
+    ); /* Each column takes up half the width with some spacing */
+    max-width: calc(50% - 20px); /* Set max-width to half the container width */
+    padding: 10px 5px;
+    border: 1px solid violet;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    margin: 5px;
+    margin-bottom: 30px;
+    background: lightgrey;
+    text-align: center;
+    justify-content: space-between;
+    transform: 5s ease;
+  }
+
+  /*--------------brands-------------*/
+  .brands {
+    margin: 100px auto;
+    text-align: center; /* Center align the brands */
+  }
+
+  .col-5 {
+    width: calc(
+      20% - 20px
+    ); /* Set width to 20% of the container width with some spacing */
+    max-width: 200px; /* Set max-width to 100px */
+    display: inline-block; /* Display columns inline */
+    margin: 0 10px; /* Add spacing between columns */
+    vertical-align: top; /* Align columns to the top */
+  }
+
+  .col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+  }
+
+  /*---------newsletter--------------------*/
+  .newsletter {
+    position: relative; /* Set position relative */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+    height: 37vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("banners/nw\ banner.jpg");
+    background-repeat: no-repeat;
+    padding: 40px 70px;
+    margin-top: 45px;
+  }
+
+  /* Styles for the form container */
+  .newsletter .form {
+    position: absolute; /* Set position absolute */
+    bottom: 0; /* Align form to the bottom of the newsletter */
+    left: 50%; /* Center the form horizontally */
+    transform: translateX(-50%); /* Adjust horizontally to center */
+    width: 80%; /* Adjust width as needed */
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /* Add background color with transparency */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 10px; /* Add border radius for rounded corners */
+  }
+
+  /* Styles for form elements */
+  .newsletter .form input {
+    width: calc(100% - 10px); /* Adjust width to accommodate padding */
+    margin-bottom: 2px; /* Add margin for spacing between elements */
+  }
+
+  .newsletter .form button {
+    width: calc(100% - 10px); /* Adjust width to accommodate padding */
+  }
+
+  /* Styles for h4 element */
+  .newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 2px; /* Adjust padding top to move the h4 element upwards */
+    padding-bottom: 2px;
+    color: white;
+    margin-top: 0; /* Remove margin-top */
+    margin-bottom: 5px; /* Add margin-bottom for spacing */
+  }
+
+  /* Styles for p element */
+  .newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 50px; /* Adjust padding bottom */
+    color: burlywood;
+    min-width: 120px;
+    margin-top: 0; /* Remove margin-top */
+
+    position: relative; /* Add position relative to p */
+    z-index: 2; /* Ensure p appears above form */
+  }
+
+  .newsletter p span {
+    color: brown;
+  }
+
+  .page-header {
+    position: relative; /* Set position relative to use absolute positioning */
+    background-image: url(banners/pg-banner.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center align content vertically */
+    text-align: center;
+  }
+
+  .page-header h2,
+  .page-header p {
+    color: rgb(200, 66, 182);
+    position: absolute; /* Set position absolute */
+    width: 80%; /* Limit width to 80% of the container */
+    left: 50%; /* Position in the center horizontally */
+    transform: translateX(-50%); /* Adjust horizontally to center */
+  }
+
+  .page-header h2 {
+    top: 300%; /* Position at 30% from the top */
+    margin-bottom: 200px;
+  }
+
+  .page-header p {
+    top: 100%; /* Position at 50% from the top */
+    margin-top: 120px;
+  }
+
+  /* Blog Page */
+
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #blog .blog-img {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  #blog .blog-details {
+    width: 100%;
+  }
+
+  #about-head {
+    display: flex;
+    align-items: center;
+  }
+
+  #about-head img {
+    width: 40%;
+    height: 40vh;
+    margin-top: 60px;
+    border-radius: 10px 50px;
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+
+  #about-head div {
+    padding-top: 50px; /* Adjust as needed to move the div downwards */
+  }
+
+  #cart {
+    overflow-x: auto;
+  }
+
+  #cart table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  #cart table img {
+    width: 70px;
+  }
+
+  #cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px;
+  }
+
+  #cart table .table-head {
+    border: 1px solid lightgrey;
+    border-left: none;
+    border-right: none;
+  }
+
+  #cart table .table-head td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px 5px;
+  }
+
+  #cart table tbody td {
+    padding: 5px;
+    vertical-align: middle;
+    font-size: 14px; /* Adjust font size if necessary */
+  }
+}
